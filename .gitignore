@@ -1,0 +1,11 @@
+# Created by .ignore support plugin (hsz.mobi)
+# Project exclude paths
+/.gradle/
+/Coffee Machine/task/out/
+/Coffee Machine/task/out/production/classes/
+.idea
+.gradle
+/Coffee Machine/task/build/classes
+/Coffee Machine/task/build/reports
+/Coffee Machine/task/build/test-results
+/Coffee Machine/task/build/tmp
