@@ -188,6 +188,30 @@ files:
         }
     }
   learner_created: false
+- name: test/readability/MainTest.java
+  visible: true
+  text: |-
+    package readability;
+
+    import junit.framework.TestCase;
+    import org.junit.Test;
+
+    import java.util.Arrays;
+
+    public class MainTest extends TestCase {
+
+        @Test
+        public void test() {
+            String test = "This text is hard to read. It contains a lot of sentences as well as a lot of words in each sentence.";
+
+            String[] split = test.split("\\.");
+
+            Arrays.stream(split).forEach(System.out::println);
+
+        }
+
+    }
+  learner_created: false
 feedback_link: https://hyperskill.org/projects/39/stages/207/implement
 status: Unchecked
 record: -1

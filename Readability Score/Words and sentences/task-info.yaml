@@ -50,6 +50,41 @@ files:
         }
     }
   learner_created: false
+- name: src/readability/Main.java
+  visible: true
+  text: |
+    package readability;
+
+    public class Main {
+        public static void main(String[] args) {
+            System.out.print("Hello world!");
+        }
+    }
+  learner_created: true
+- name: test/readability/MainTest.java
+  visible: true
+  text: |-
+    package readability;
+
+    import junit.framework.TestCase;
+    import org.junit.Test;
+
+    import java.util.Arrays;
+
+    public class MainTest extends TestCase {
+
+        @Test
+        public void test() {
+            String test = "This text is hard to read. It contains a lot of sentences as well as a lot of words in each sentence.";
+
+            String[] split = test.split("\\.");
+
+            Arrays.stream(split).forEach(System.out::println);
+
+        }
+
+    }
+  learner_created: false
 feedback_link: https://hyperskill.org/projects/39/stages/206/implement
-status: Unchecked
+status: Failed
 record: -1
