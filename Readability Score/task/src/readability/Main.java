@@ -29,7 +29,7 @@ public class Main {
 
         public SentenceInfo(String originSentence) {
             this.originSentence = originSentence;
-            this.wordCount = Arrays.stream(originSentence.split(" ")).collect(Collectors.toSet()).size();
+            this.wordCount = Arrays.stream(originSentence.split(" ")).collect(Collectors.toList()).size();
         }
 
         public int getWordCount() {
